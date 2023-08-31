@@ -1,0 +1,32 @@
+#hoverdiv:hover #textdiv{
+ /* background-color: aqua; */
+ visibility: visible;
+
+}
+#hoverdiv:hover {
+    width: 12rem;
+}
+
+
+#textdiv{
+    visibility: hidden;
+}
+#hoverdiv {
+    transition: 15s ease-in;
+    
+
+}
+
+#textdiv:hover{
+    color: white;
+   transform: scale(0.75);
+   transition: 0.3s ease-out;
+   text-shadow: 0px 0px 10px white;
+   cursor: pointer;;
+   
+}
+.w-6 h-6:hover{
+    color: white;
+}
+
+

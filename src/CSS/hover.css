@@ -1,0 +1,24 @@
+#maindiv{
+    transition: transform .3s ease-in;
+}
+#hidediv{
+    visibility: hidden;
+}
+#maindiv:hover #hidediv{
+    visibility: visible;
+}
+#maindiv:hover #hidetitle{
+    visibility: hidden;
+
+}
+#maindiv:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px .1px rgba(0, 0, 0, 0.373);
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(16, 15, 15) , rgb(21, 21, 20));
+    
+}
+#icons:hover{
+    fill: white;
+    /* background-color: rgba(255, 255, 255, 0.689); */
+}
