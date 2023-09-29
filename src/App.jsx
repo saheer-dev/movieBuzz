@@ -11,10 +11,8 @@ import Upcome from "./view_all_movies/upcome"
 import Nowplay from "./view_all_movies/Nowplay"
 import TopR from "./view_all_movies/TopR"
 import Populars from "./view_all_movies/populars"
-import Sidebar from "./components/Sidebar"
 import Indivitual from "./components/indivitual"
 import Search from "./components/Search"
-// import Sach from "./components/sac/sa"
 
 function App() {
 
@@ -23,7 +21,6 @@ function App() {
       <div className="overflow-x-hidden scroll-smooth" >
         <Router>
              <Navbar/>
-             <Sidebar/>
           <Routes>
             <Route path="/" element={
               

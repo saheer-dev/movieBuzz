@@ -2,10 +2,14 @@ import React from 'react'
 import "../CSS/naviBar.css"
 import { Link } from 'react-router-dom'
 
-export default function Sidebar() {
+
+export default function Sidebar({toggleModalClose}) {
   return (
       
-      <div className="h-[100vh] w-80 bg-transparent mt-20 flex flex-col pt-28 items-white gap-12 fixed z-50 " id="hoverdiv">
+      <div className="h-[100vh] w-72 bg-black flex flex-col pt-28  gap-16 fixed " >
+        <div className='flex justify-end items-end -mt-[7.25rem]'>
+       
+        </div>
         
 <Link to="/Search">
 

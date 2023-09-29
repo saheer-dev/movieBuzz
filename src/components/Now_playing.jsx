@@ -27,6 +27,9 @@ let navigate=useNavigate()
   };
 
   const [nowPlaying, setnowPlaying] = useState([]);
+
+
+  
   useEffect(() => {
     axios.get(
         "https://api.themoviedb.org/3/movie/now_playing?api_key=efb536b72f026a1ee09ebca3b1a7abff"

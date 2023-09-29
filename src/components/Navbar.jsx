@@ -1,19 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from './../assets/logo.png'
 import { Link } from 'react-router-dom'
-import { List } from '@phosphor-icons/react'
+import { List, X } from '@phosphor-icons/react'
+import Sidebar from './Sidebar'
+import "../CSS/naviBar.css"
 
 export default function Navbar() {
+
+  const [modal, setModal] = useState(false)
+
+  const toggleModal = () => {
+    setModal(!modal)
+  }
+
+  // const toggleModalClose = () => {
+  //   setModal(modal)
+  // }
+
+
+  
+
+
   return (
-    <div className='fixed z-[50000]'>
+    <div className='fixed z-10'>
        <div>
        <div  className='w-screen h-[4rem] p-3 flex flex-row items-center justify-between bg-[#070318]'>
-       <List size={32} color='white' />
 
+
+            <div className='flex gap-6 items-center justify-center ml-2'>
+             <List onClick={toggleModal} size={32} color='white' />
             <Link to='/'>
-            <div>
-            <img className='h-14 pl-5' src={logo} alt="" />
-            </div></Link>
+            <img className='h-12' src={logo} alt="" />
+            </Link>
+            </div>
 
             <div className='flex gap-16 justify-center items-center'>
               <Link to='/'>
@@ -48,6 +67,15 @@ export default function Navbar() {
             
         </div>
        </div>
+
+       <div className='mb-0'>
+        {modal && (
+          <Sidebar />
+        
+        )}
+       </div>
+
+      
       
     </div>
   )
